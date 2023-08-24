@@ -1,0 +1,436 @@
+body {
+    margin: 0;
+    font-family: 'Maitree', serif;
+  }
+
+  /* Signika Font */
+  p, a, span{
+    font-family: 'Signika', sans-serif;
+
+  }
+
+  /* Header Section */
+  header {
+    background-color: rgba(51, 51, 51);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    width: auto;
+    height: 50px; 
+    margin-left: 5%;
+  }
+  .logo_image{
+    width: auto;
+    height: 50px;
+  }
+  nav {
+    margin-right: 5%;
+    display: flex;
+    gap: 20px;
+  }
+  .home {
+    display: inline;
+    padding: 10px 20px;
+    color: #ECF9FF;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .get-started-button {
+    display: inline;
+    padding: 10px 20px;
+    background-color: #F8CBA6;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  .get-started-button:hover{
+    color: #ECF9FF;
+    cursor: pointer;
+  }
+
+
+  /* Hero Section */
+  .hero {
+    position: relative;
+    height: 500px;
+    background-image: url('Shore.png'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(248, 203, 166, 0.1); /* Semi-transparent brown overlay */
+  }
+  .intro-text {
+    z-index: 1;
+    margin-left: 80px;
+    max-width: 500px;
+    text-shadow: 2px 2px 4px rgba(51, 51, 51, 0.5);
+  }
+  .product-title{
+    width: 50px;
+    text-align: left;
+  }
+  .product-info{
+    font-size: large;
+    font-stretch: expanded;
+  }
+  .buy-button {
+    text-align: center;
+    display: inline;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #ECF9FF;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  /* Darker brown on hover this button */
+  .buy-button:hover {
+    background-color: #F8CBA6; 
+    color: #333;
+  }
+
+
+  /* Product Section */
+  .product-grid {
+    margin: 200px 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+  }
+  .product-item {
+    background-color: white;
+    border: 1px solid #ECF9FF;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(51, 51, 51, 0.1);
+    text-align: center;
+  }
+  .product-item:hover{
+    box-shadow: 0px 2px 5px rgba(51, 51, 51, 0.3);
+    cursor: pointer;
+  }
+  .product-image {
+    width: 100%; 
+    height: 150px; /* Fixed height for all images at 150px*/
+    object-fit:contain; /* Maintain aspect ratio and contain the container */
+    margin-bottom: 10px;
+  }
+  .product-name {
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(236, 249, 255, 0.7);
+  }
+
+
+  /* About Section */
+  .about-section {
+    padding: 200px 0;
+    background-color: #F8CBA6;
+    border: 1px solid #ECF9FF;
+    text-align: left;
+    box-shadow: 0px 2px 5px rgba(51, 51, 51, 0.1);
+  }
+  h2{
+    padding: 0 200px;
+  }
+  .description {
+    line-height: 20px;
+    line-height: 30px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    padding: 0 200px;
+    max-height: 7em; /* 3 lines of text with 7em line height */
+    overflow: hidden;
+    position: relative;
+  }
+  .ellipsis {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 215px 5px 0;
+    letter-spacing: 3px;
+    line-height: 30px;
+  }
+  .read-more-link,
+  .read-less-link {
+    padding: 0 200px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .read-more-link:hover,
+  .read-less-link:hover {
+    text-decoration: underline;
+  }
+
+  .expanded {
+    max-height: none;
+
+  }
+
+
+  /* Call-To-Action Section*/
+  .cta-container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .cta-section {
+    padding: 200px 0;
+    position: relative;
+    height: 400px;
+    background-image: url('GoldOrangeDot.png'); 
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cta-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(248, 203, 166, 0.15);
+  }
+  .cta-text {
+    z-index: 1;
+    color: #333;
+    font-size: 20px;
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 200 0px;
+  }
+  .product-cta-info{
+    line-height: 40px;
+    border-right-width: 200px;
+    padding: 50px 500px 30px 0;
+    justify-items: center;
+  }
+  
+  .shore{
+    text-shadow:none;
+    color: #F8CBA6;
+  }
+  .product-cta{
+    padding: 0;
+    text-shadow: 2px 2px 4px rgba(51, 51, 51, 0.30);
+  }
+  .cta-button {
+    display: inline;
+    padding: 10px 20px;
+    background-color: #F8CBA6; 
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+ .cta-button:hover{
+    background-color: #333;
+    color: #ECF9FF;
+ }
+
+
+ /* Contact Section */
+ .contact-section {
+    padding: 200px 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 200px 0;
+    text-align: center;
+    color: #333;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .form-group {
+    margin-bottom: 15px;
+    
+  }
+  .contact-us{
+    text-shadow: 2px 2px 4px rgba(51, 51, 51, 0.5);
+    padding: 0 0 50px 0;
+  }
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 0.2rem solid #333;
+    
+  }
+  .submit-button {
+    display: inline;
+    padding: 10px 20px;
+    background-color: #F8CBA6;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .submit-button:hover {
+    background-color: #333; 
+    color: #ECF9FF;
+  }
+
+  /* Footer Section */
+  #footer-section{
+    padding: 50px 0;
+    background-color: #F8CBA6;
+    text-align: center;
+
+  }
+  .copyright{
+    margin: 30px 20px 40px 20px;
+    color: #333;
+    padding: 3px 0;
+  }
+
+  /* Make this responsive to any screen available or any devices */
+  @media (max-width: 1028px) {
+
+    h2, h3, p, a {
+        font-size: 1rem;
+    }
+
+    /* header */
+    .logo {
+      width: auto;
+      height: 45px; 
+    }
+    .logo_image{
+      height: 45px;
+    }
+    .home {
+      padding: 10px 2px;
+      font-size: .8rem;
+    }
+    .get-started-button {
+      padding: 10px 2px;
+      font-size: .8rem;
+    }
+
+    /* hero section */
+    .intro-text{
+      position: relative;
+      top: 80px;
+      padding: 0 ;
+      margin: 40px;
+    }
+    .product-title{
+      font-size: 5rem;
+    }
+
+    /* product section */
+    .product-grid{
+      margin-top: 300px;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    }
+    
+
+    /* about section */
+    .about-section{
+      text-align: center;
+    }
+    h2{
+      padding: 0;
+    }
+    .description {
+      word-spacing: 2px;
+      letter-spacing: 1px;
+      padding: 0 
+    }
+    .ellipsis {
+      padding: 0;
+      line-height: 35px;
+    }
+    .read-more-link,
+    .read-less-link {
+      padding: 0;
+      font-weight: bold;
+      color: #333;
+      text-decoration: none;
+
+    }
+
+    /* cta section */
+    .cta-section{
+      padding: 0;
+      margin: 0 0 200px 0;
+      text-align: center;
+    }
+    .cta-text {
+      font-size: 10px;
+      max-width: fit-content;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+    .product-cta-info{
+      padding: 0 0 30px 0;
+      margin: 0;
+      line-height: 20px;
+    }
+
+    /* contact section */
+    .contact-section{
+      padding: 150px 0;
+    }
+    .contact-us{
+      padding: 0 0 85px 0;
+    }
+
+    #name, #email{
+      width: 50%;
+    }
+
+
+  }
+
+  /* Float-In effects when scrolling*/
+.float-in-item {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.float-in-item.float-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
